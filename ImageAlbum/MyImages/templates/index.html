@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% comment %} search {% endcomment %}
+
+    <!-- <div class="card text-white mt-3 bg-light" style="height: 250px;"> -->
+        <!-- <img src="https://images.all-free-download.com/images/graphicthumb/wisconsin_nature_outside_215558.jpg" style="height: 250px;" class="card-img"  alt="..."> -->
+        <!-- <div class="card-img-overlay flexible">
+            <form class="form-inline flex flexible">
+                <input class="form-control mr-sm-2" style="font-size:25px" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" style="font-size:25px;border: none"
+                    type="submit">Search</button>
+            </form>
+        </div>
+    </div> -->
+
+    <footer class="navbar navbar-expand-lg navbar-light bg-light mt-3 mb-3">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                {% comment %} <span><img src="https://static.thenounproject.com/png/2641567-200.png" alt="Image" style="width: 100px;"></span> {% endcomment %}
+                <h2>Welcome {{user.username}}</h2>
+                {% comment %} <span><img src="https://static.thenounproject.com/png/2641567-200.png" alt="Image" style="width: 100px;"></span> {% endcomment %}
+            </div>
+        </div>
+    </footer>
+
+
+    {% comment %} Slider {% endcomment %}
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="featured-carousel owl-carousel">
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url('{% static 'headingImages/nature.jpg' %}');">
+                                    <a href="nature" class="icon d-flex align-items-center justify-content-center">
+                                        <span class="ion-ios-search"></span>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h2><a href="nature">Nature</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url('{% static 'headingImages/food.jpg' %}');">
+                                    <a href="food" class="icon d-flex align-items-center justify-content-center">
+                                        <span class="ion-ios-search"></span>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h2><a href="food">Food</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url('{% static 'headingImages/health.jpg' %}');">
+                                    <a href="health" class="icon d-flex align-items-center justify-content-center">
+                                        <span class="ion-ios-search"></span>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h2><a href="health">Health</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url('{% static 'headingImages/travel.jpg' %}');">
+                                    <a href="travel" class="icon d-flex align-items-center justify-content-center">
+                                        <span class="ion-ios-search"></span>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h2><a href="travel">Travel</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url('{% static 'headingImages/animal.jpg' %}');">
+                                    <a href="animal" class="icon d-flex align-items-center justify-content-center">
+                                        <span class="ion-ios-search"></span>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h2><a href="animal">Animal</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url('{% static 'headingImages/fashion.jpg' %}');">
+                                    <a href="fashion" class="icon d-flex align-items-center justify-content-center">
+                                        <span class="ion-ios-search"></span>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h2><a href="fashion">Fashion</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="work">
+                                <div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url('{% static 'headingImages/athlete.jpg' %}');">
+                                    <a href="athlete" class="icon d-flex align-items-center justify-content-center">
+                                        <span class="ion-ios-search"></span>
+                                    </a>
+                                </div>
+                                <div class="text pt-3 w-100 text-center">
+                                    <h2><a href="athlete">Athletes</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

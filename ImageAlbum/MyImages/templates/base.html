@@ -1,0 +1,164 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Collection</title>
+    {% comment %} contact form link start {% endcomment %}
+
+    <!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'contactform/images/icons/favicon.ico' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contactform/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contactform/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contactform/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contactform/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contactform/vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contactform/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contactform/vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'contactform/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'contactform/css/main.css' %}">
+<!--===============================================================================================-->
+
+{% comment %} contactform link end {% endcomment %}
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+</head>
+
+<body>
+
+    {% comment %} nav start {% endcomment %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            {% comment %} <a class="navbar-brand" href="/dashboard">IMAGE COLLECTION</a> {% endcomment %}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/dashboard"><h3>HOME</h3></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <h3>CATEGORTY</h3>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="nature"><h4>Nature</h4></a>
+                          <a class="dropdown-item" href="food"><h4>Food</h4></a>
+                          <a class="dropdown-item" href="health"><h4>Health</h4></a>
+                          <a class="dropdown-item" href="travel"><h4>Travel</h4></a>
+                          <a class="dropdown-item" href="animal"><h4>Animal</h4></a>
+                          <a class="dropdown-item" href="fashion"><h4>Fashion</h4></a>
+                          <a class="dropdown-item" href="athlete"><h4>Athletes</h4></a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery"><h3>GALLERY</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about"><h3>ABOUT</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus"><h3>CONTACT US</h3></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout"><h3>LOGOUT</h3></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% comment %} nav end {% endcomment %}
+
+    {% block content %}
+    {% endblock content %}
+    {% comment %} Footer start {% endcomment %}
+    <div class="bg-light">
+    <div class="socialmedia container" style="font-size:50px;padding: 0 510px">
+        <a target="_blank" href="https://www.linkedin.com/in/shani-baladhiya-866a501b7/" class="fa fa-linkedin"></a>
+        <a target="_blank" class="fa fa-github" aria-hidden="true" href="https://github.com/shanibaladhiya"></a>
+        <a target="_blank" class="fa fa-instagram" aria-hidden="true" href="https://instagram.com/bunny._.vala._.shani"></a>
+    </div>
+    </div>
+    <footer class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <h2>Copyright ©2021 Shani Baladhiya</h2>
+            </div>
+        </div>
+    </footer>
+
+    {% comment %} Footer end {% endcomment %}
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+
+    {% comment %} contact script start here {% endcomment %}
+
+    <!--===============================================================================================-->
+	<script src="{% static 'contactform/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'contactform/vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'contactform/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'contactform/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'contactform/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'contactform/vendor/daterangepicker/moment.min.js' %}"></script>
+	<script src="{% static 'contactform/vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'contactform/vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'contactform/js/main.js' %}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+{% comment %} contact script end  {% endcomment %}
+
+</body>
+
+</html>

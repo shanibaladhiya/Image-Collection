@@ -1,0 +1,102 @@
+/* navbar css starts here  */
+.bg-light{
+    background: linear-gradient(rgba(255, 255, 255, 0.568), rgba(68, 161, 184, 0.596));
+    box-shadow: 0px 0px 20px 3px  rgb(28, 30, 31);
+}
+.navbar-brand{
+    font-weight: 700;
+    font-size: 2.40rem;
+    color: rgb(204, 18, 18)!important;
+}
+.navbar-brand span{
+    font-weight: 700;
+    font-size: 1.40rem;
+    color: rgb(243, 236, 236)!important;
+}
+.navbar-brand:hover{
+    color: rgb(5, 24, 39)!important;
+}
+.navbar-brand span:hover{
+    color: rgb(204, 18, 18)!important;
+}
+.nav-item{
+    padding: 0px 0px 0px 6px;
+    font-size: 20PX;
+}
+.nav-link{
+    color: rgb(204, 18, 18)!important;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.nav-link:hover{
+    color: rgb(243, 236, 236)!important;
+    background-color: rgb(48, 161, 236);
+}
+/* navbar css ends here  */
+
+.flexible{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 5px  rgb(28, 30, 31);
+}
+.btn{
+    background-color: white;
+}
+.form-control{
+    box-shadow: 0px 0px 20px 3px  rgb(79, 95, 112);
+}
+.card:hover{
+    color: rgb(5, 24, 39)!important;
+}
+
+/* about */
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  /* social icon */
+  .socialmedia{
+    padding: 0px 20px 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fa {
+    display: inline;
+    padding: 8px;
+    margin: 40px 10px 15px;
+    font-size: 35px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;  
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      color: white;
+      transform: translateY(-15px);
+      
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-github {
+    background: #000000;
+    color: white;
+  }
+  .fa-instagram{
+      background: #e94949;
+      color: white;
+  }
+  .fa-instagram:hover{
+    color: white;
+  }
